@@ -1,0 +1,15 @@
+{
+  "name": "bot-maniac",
+  "version": "1.0.0",
+  "description": "Bot for the server Bot Maniac!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "New SkyReaper#2998",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.3.1"
+  }
+}
