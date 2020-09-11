@@ -4,7 +4,7 @@ const prefix = "bm?";
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}! ${client.user.id}`);
-  client.user.setActivity("I am not ready yet. Use bm!help!")
+  client.user.setActivity("use bm!help!")
 });
 
 client.on('message', message => {
