@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = "bm?";
+const prefix = "mb!";
 
 const { GiveawaysManager } = require("discord-giveaways");
 
@@ -19,7 +19,7 @@ client.giveawaysManager = manager;
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}! ${client.user.id}`);
-  client.user.setActivity("use bm?help!")
+  client.user.setActivity("use mb!help!")
 });
 
 client.on('message', message => {
