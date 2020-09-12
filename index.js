@@ -8,8 +8,18 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
+  if (!message.content.startsWith(prefix) || message.author.bot) return;
+
+  const args = message.content.slice(prefix.length).trim().split(' ');
+
   if(message.content.startsWith(`${prefix}help`)) {
-    message.channel.send("I am not ready yet! Wait for my developer to give me stuff to do!")
+    message.channel.send(`Commands are:\n${prefix}say\nThats all!`)
+  }
+
+  if(message.content.startsWith(`${prefix}say`)) {
+    const sayMessage = args.join(" ");
+    message.delete().catch(O_o => {});
+    message.channel.send(`${sayMessage}`);
   }
 });
 
